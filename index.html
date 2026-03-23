@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pravin Mohite | Cybersecurity Portfolio</title>
+<link rel="icon" type="image/jpeg" href="profile.jpg">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error": "#690005",
+              "primary-fixed-dim": "#00daf3",
+              "on-surface": "#e5e2e3",
+              "surface-container": "#201f20",
+              "on-primary": "#00363d",
+              "inverse-on-surface": "#313031",
+              "surface-container-low": "#1c1b1c",
+              "on-tertiary-fixed": "#22005d",
+              "on-error-container": "#ffdad6",
+              "secondary-fixed": "#72ff70",
+              "on-tertiary-container": "#6f27fb",
+              "secondary-fixed-dim": "#00e639",
+              "surface-container-lowest": "#0e0e0f",
+              "on-primary-fixed": "#001f24",
+              "surface-tint": "#00daf3",
+              "on-secondary-fixed-variant": "#00530e",
+              "on-secondary-container": "#007117",
+              "primary-fixed": "#9cf0ff",
+              "surface-container-highest": "#353436",
+              "primary-container": "#80ecff",
+              "on-background": "#e5e2e3",
+              "on-tertiary": "#3a0093",
+              "on-surface-variant": "#b9ccb2",
+              "on-primary-container": "#006b78",
+              "error": "#ffb4ab",
+              "background": "#131314",
+              "secondary": "#ecffe3",
+              "tertiary": "#fdf7ff",
+              "inverse-surface": "#e5e2e3",
+              "secondary-container": "#13ff43",
+              "on-secondary-fixed": "#002203",
+              "primary": "#edfcff",
+              "surface-variant": "#353436",
+              "on-secondary": "#003907",
+              "error-container": "#93000a",
+              "surface-container-high": "#2a2a2b",
+              "surface-bright": "#3a393a",
+              "surface": "#131314",
+              "on-primary-fixed-variant": "#004f58",
+              "outline": "#84967e",
+              "surface-dim": "#131314",
+              "tertiary-fixed": "#e8ddff",
+              "on-tertiary-fixed-variant": "#5300cd",
+              "tertiary-container": "#e3d6ff",
+              "inverse-primary": "#006875",
+              "outline-variant": "#3b4b37",
+              "tertiary-fixed-dim": "#cfbdff"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #131314;
+            color: #edfcff;
+            scroll-behavior: smooth;
+        }
+        .glass-panel {
+            background: rgba(32, 31, 32, 0.6);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+<style>
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-scroll {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 40s linear infinite;
+}
+.scroll-container {
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+}
+</style></head>
+<body class="font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#131314]/80 backdrop-blur-xl border-b border-[#edfcff]/5 shadow-2xl shadow-black/50">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<a href="index.html" class="flex items-center gap-3 text-2xl font-bold tracking-tighter text-[#00FF41] font-headline hover:text-white transition-colors group">
+    <div class="w-8 h-8 rounded-full overflow-hidden border border-[#00FF41]/20 group-hover:border-[#00FF41]/50 transition-colors">
+        <img src="profile.jpg" alt="P" class="w-full h-full object-cover">
+    </div>
+    Pravin Mohite.
+</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-[#00FF41] font-bold border-b-2 border-[#00FF41] pb-1 font-headline tracking-tight" href="#overview">Overview</a>
+<a class="text-[#edfcff]/60 hover:text-[#edfcff] transition-colors font-headline tracking-tight" href="#about">About</a>
+<a class="text-[#edfcff]/60 hover:text-[#edfcff] transition-colors font-headline tracking-tight" href="#experience">Experience</a>
+<a class="text-[#edfcff]/60 hover:text-[#edfcff] transition-colors font-headline tracking-tight" href="#projects">Projects</a>
+<a class="text-[#edfcff]/60 hover:text-[#edfcff] transition-colors font-headline tracking-tight" href="#certifications">Certifications</a>
+<a class="text-[#edfcff]/60 hover:text-[#edfcff] transition-colors font-headline tracking-tight" href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="min-h-[819px] flex flex-col justify-center px-8 max-w-7xl mx-auto relative overflow-hidden" id="overview">
+
+<div class="z-10 flex flex-col items-center text-center mx-auto pt-20"><div class="w-32 h-32 rounded-[50%] border border-outline-variant/30 bg-surface-container-highest flex items-center justify-center mx-auto mb-8 overflow-hidden">
+<img src="profile.jpg" alt="Pravin Mohite Profile" class="w-full h-full object-cover">
+</div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/10 border border-secondary-container/20 mb-6">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary-container"></span>
+</span>
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-secondary">Open to work // Active_Hunt</span>
+</div>
+<h1 class="font-headline text-6xl md:text-8xl font-bold tracking-tighter text-primary mb-4 text-center">
+                    Pravin Mohite
+                </h1>
+<p class="font-headline text-xl md:text-3xl text-on-surface-variant max-w-2xl leading-tight mb-8 text-center">
+                    Cybersecurity Professional <span class="text-secondary">&amp;</span> HTB CPTS Certified Researcher focusing on real-world security challenges.
+                </p>
+<div class="flex flex-wrap gap-4 mb-12 justify-center">
+<a class="bg-primary-fixed-dim text-on-primary-fixed px-8 py-3 rounded-md font-headline font-semibold flex items-center gap-2 hover:scale-105 transition-all duration-300" href="#">
+                        View Resume <span class="material-symbols-outlined text-sm">download</span>
+</a>
+<div class="flex gap-4">
+<a class="w-12 h-12 flex items-center justify-center border border-outline-variant rounded-md hover:bg-surface-container-highest transition-colors" href="https://linkedin.com/in/encoded1/">
+<svg class="w-6 h-6 fill-current text-white" viewBox="0 0 24 24" aria-hidden="true">
+  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+</svg>
+</a>
+<a class="w-12 h-12 flex items-center justify-center border border-outline-variant rounded-md hover:bg-surface-container-highest transition-colors" href="https://github.com/icypenguin01">
+<svg class="w-6 h-6 fill-current text-white" viewBox="0 0 24 24" aria-hidden="true">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.45-1.15-1.1-1.46-1.1-1.46-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 10 0 0 12 2z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-auto grid grid-cols-2 md:grid-cols-4 gap-4 pb-12">
+<div class="p-4 border-l border-outline-variant bg-surface-container-lowest/30">
+<span class="font-label text-[10px] uppercase text-on-surface-variant block mb-1">Status</span>
+<span class="font-headline text-lg text-primary">Self-Driven Learning</span>
+</div>
+<div class="p-4 border-l border-outline-variant bg-surface-container-lowest/30">
+<span class="font-label text-[10px] uppercase text-on-surface-variant block mb-1">Focus</span>
+<span class="font-headline text-lg text-primary">Offensive Security</span>
+</div>
+<div class="p-4 border-l border-outline-variant bg-surface-container-lowest/30">
+<span class="font-label text-[10px] uppercase text-on-surface-variant block mb-1">Rank</span>
+<span class="font-headline text-lg text-primary">Pro Hacker (HTB)</span>
+</div>
+<div class="p-4 border-l border-outline-variant bg-surface-container-lowest/30">
+<span class="font-label text-[10px] uppercase text-on-surface-variant block mb-1">Location</span>
+<span class="font-headline text-lg text-primary">Remote / Global</span>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-24 bg-surface-container-low" id="about">
+<div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
+<div class="relative group">
+<div class="absolute inset-0 bg-secondary-container/10 blur-2xl group-hover:bg-secondary-container/20 transition-all"></div>
+<img alt="Cybersecurity Research Environment" class="relative z-10 w-full aspect-square object-cover group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" data-alt="Monochromatic high-tech server room background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyMRTxadVIMxc2ukCDDkDrr9xlV2euto5ccqE1D7XhTScHbmVPUKqyAmMZZqiHiCpxG5X8DMsiV27sPIO3BqeS8lULXn5Z3csc7uBee7njMQW7FeCtm-0jX61IfrLAwshCi-tCsNthzYx8C2FXjGMMcreYn80sIRQZO9rFrH5U_RUzUK7Jw9QkIdt8fwac2WGH9g-XVBvYp3qgO1aX5f7kFJS8od2FlsnJci1BiGGT0_Jz5J9LFyK42f1sm5pfTwzkGoin7UBq8x23"/>
+<div class="absolute -bottom-4 -left-4 z-20 bg-surface-container-highest p-6 border border-outline-variant">
+<span class="font-label text-xs text-secondary block mb-1">RESEARCH_MODE</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline text-4xl font-bold">100+</span>
+<span class="font-label text-xs text-on-surface-variant">VULNS_FOUND</span>
+</div>
+</div>
+</div>
+<div>
+<h2 class="font-headline text-4xl font-bold mb-6 text-primary">The Security Architect</h2>
+<div class="space-y-6 text-on-surface-variant font-body leading-relaxed">
+<p>
+                            Passion for self-taught cybersecurity driven by a deep curiosity for system internals and edge-case vulnerabilities. My journey transitioned from academic curiosity to active offensive security research through platforms like Hack The Box and TryHackMe.
+                        </p>
+<p>
+                            Specializing in penetration testing and vulnerability research, I build labs to simulate complex attack vectors. My methodology focuses on the "First Principles" of security—understanding how things work to effectively break and secure them.
+                        </p>
+<div class="pt-4 border-t border-outline-variant/30">
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary block mb-4">Core Philosophy</span>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span class="text-sm font-label">Continuous Recon</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span class="text-sm font-label">Manual Exploitation</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span class="text-sm font-label">Post-Mortem Analysis</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span class="text-sm font-label">AI-Integrated Sec</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section - Bento Grid -->
+<section class="py-24 px-8 max-w-7xl mx-auto" id="skills">
+<h2 class="font-headline text-4xl font-bold mb-12 text-center text-primary">Technical Arsenal</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Offensive -->
+<div class="bg-surface-container-high p-8 group hover:bg-surface-container-highest transition-all duration-300">
+<div class="w-12 h-12 bg-secondary-container/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-secondary">security</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4 text-primary">Offensive</h3>
+<ul class="space-y-3">
+<li class="flex justify-between items-center border-b border-outline-variant/20 pb-2">
+<span class="font-label text-on-surface-variant">Penetration Testing</span>
+<span class="text-[10px] font-label text-secondary">EXPERT</span>
+</li>
+<li class="flex justify-between items-center border-b border-outline-variant/20 pb-2">
+<span class="font-label text-on-surface-variant">Vulnerability Assessment</span>
+<span class="text-[10px] font-label text-secondary">ADVANCED</span>
+</li>
+<li class="flex justify-between items-center border-b border-outline-variant/20 pb-2">
+<span class="font-label text-on-surface-variant">Exploit Development</span>
+<span class="text-[10px] font-label text-secondary">INTERMEDIATE</span>
+</li>
+<li class="flex justify-between items-center border-b border-outline-variant/20 pb-2">
+<span class="font-label text-on-surface-variant">Web Security</span>
+<span class="text-[10px] font-label text-secondary">EXPERT</span>
+</li>
+</ul>
+</div>
+<!-- Defensive -->
+<div class="bg-surface-container-high p-8 group hover:bg-surface-container-highest transition-all duration-300">
+<div class="w-12 h-12 bg-primary-container/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary-fixed-dim">shield</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4 text-primary">Defensive</h3>
+<ul class="space-y-3">
+<li class="flex justify-between items-center border-b border-outline-variant/20 pb-2">
+<span class="font-label text-on-surface-variant">Lab Design</span>
+<span class="text-[10px] font-label text-primary-fixed-dim">EXPERT</span>
+</li>
+<li class="flex justify-between items-center border-b border-outline-variant/20 pb-2">
+<span class="font-label text-on-surface-variant">MITRE ATT&amp;CK</span>
+<span class="text-[10px] font-label text-primary-fixed-dim">ADVANCED</span>
+</li>
+<li class="flex justify-between items-center border-b border-outline-variant/20 pb-2">
+<span class="font-label text-on-surface-variant">Threat Intelligence</span>
+<span class="text-[10px] font-label text-primary-fixed-dim">ADVANCED</span>
+</li>
+<li class="flex justify-between items-center border-b border-outline-variant/20 pb-2">
+<span class="font-label text-on-surface-variant">Log Analysis</span>
+<span class="text-[10px] font-label text-primary-fixed-dim">INTERMEDIATE</span>
+</li>
+</ul>
+</div>
+<!-- Tools -->
+<div class="bg-surface-container-high p-8 group hover:bg-surface-container-highest transition-all duration-300">
+<div class="w-12 h-12 bg-tertiary-container/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-tertiary-fixed-dim">build</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4 text-primary">Tools</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-lowest text-[10px] font-label text-on-surface-variant border border-outline-variant/30 uppercase">Burp Suite</span>
+<span class="px-3 py-1 bg-surface-container-lowest text-[10px] font-label text-on-surface-variant border border-outline-variant/30 uppercase">Metasploit</span>
+<span class="px-3 py-1 bg-surface-container-lowest text-[10px] font-label text-on-surface-variant border border-outline-variant/30 uppercase">Wireshark</span>
+<span class="px-3 py-1 bg-surface-container-lowest text-[10px] font-label text-on-surface-variant border border-outline-variant/30 uppercase">Nmap</span>
+<span class="px-3 py-1 bg-surface-container-lowest text-[10px] font-label text-on-surface-variant border border-outline-variant/30 uppercase">Python</span>
+<span class="px-3 py-1 bg-surface-container-lowest text-[10px] font-label text-on-surface-variant border border-outline-variant/30 uppercase">Kali Linux</span>
+<span class="px-3 py-1 bg-surface-container-lowest text-[10px] font-label text-on-surface-variant border border-outline-variant/30 uppercase">Cobalt Strike</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Timeline -->
+<section id="experience" class="py-24 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary">Evolution</span>
+<h2 class="font-headline text-4xl font-bold text-primary">Career Timeline</h2>
+</div>
+<div class="relative">
+<!-- Timeline Track -->
+<div class="absolute left-0 md:left-1/2 top-0 bottom-0 w-[2px] bg-surface-variant -translate-x-1/2 hidden md:block"></div>
+<div class="space-y-12">
+<!-- Item 1 -->
+<div class="relative flex flex-col md:flex-row md:justify-between items-center group">
+<div class="md:w-[45%] mb-4 md:mb-0 text-right pr-12 hidden md:block">
+<span class="font-headline text-2xl font-bold text-secondary">2024 - Present</span>
+</div>
+<div class="absolute left-0 md:left-1/2 w-4 h-4 bg-secondary-container rounded-full -translate-x-1/2 z-10 shadow-[0_0_15px_#13ff43]"></div>
+<div class="md:w-[45%] bg-surface-container p-6 rounded-md border-l-4 border-secondary ml-8 md:ml-0">
+<span class="font-headline text-sm font-bold text-secondary md:hidden block mb-2">2024 - Present</span>
+<h4 class="font-headline font-bold text-xl text-primary mb-2">Independent Security Researcher</h4>
+<p class="text-sm text-on-surface-variant font-body mb-4">Focusing on lab development and vulnerability research. Designing custom CTF infrastructure for community learning.</p>
+<div class="flex gap-2">
+<span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label uppercase">Self-Directed</span>
+<span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label uppercase">Lab Ops</span>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="relative flex flex-col md:flex-row-reverse md:justify-between items-center group">
+<div class="md:w-[45%] mb-4 md:mb-0 text-left pl-12 hidden md:block">
+<span class="font-headline text-2xl font-bold text-primary-fixed-dim">2024</span>
+</div>
+<div class="absolute left-0 md:left-1/2 w-4 h-4 bg-primary-container rounded-full -translate-x-1/2 z-10"></div>
+<div class="md:w-[45%] bg-surface-container p-6 rounded-md border-r-4 border-primary-fixed-dim mr-8 md:mr-0 text-left">
+<span class="font-headline text-sm font-bold text-primary-fixed-dim md:hidden block mb-2">2024</span>
+<h4 class="font-headline font-bold text-xl text-primary mb-2">HTB CPTS Certification</h4>
+<p class="text-sm text-on-surface-variant font-body mb-4">Earned the Certified Penetration Testing Specialist (CPTS) designation after a rigorous 10-day exam.</p>
+<div class="flex gap-2">
+<span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label uppercase">HTB</span>
+<span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label uppercase">Certification</span>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="relative flex flex-col md:flex-row md:justify-between items-center group">
+<div class="md:w-[45%] mb-4 md:mb-0 text-right pr-12 hidden md:block">
+<span class="font-headline text-2xl font-bold text-primary-fixed-dim">2024</span>
+</div>
+<div class="absolute left-0 md:left-1/2 w-4 h-4 bg-primary-container rounded-full -translate-x-1/2 z-10"></div>
+<div class="md:w-[45%] bg-surface-container p-6 rounded-md border-l-4 border-primary-fixed-dim ml-8 md:ml-0">
+<span class="font-headline text-sm font-bold text-primary-fixed-dim md:hidden block mb-2">2024</span>
+<h4 class="font-headline font-bold text-xl text-primary mb-2">Junior PenTester</h4>
+<p class="text-sm text-on-surface-variant font-body mb-4">Completed TryHackMe's Junior Penetration Tester path, mastering core network and web exploitation basics.</p>
+<div class="flex gap-2">
+<span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label uppercase">TryHackMe</span>
+<span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label uppercase">Academic</span>
+</div>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="relative flex flex-col md:flex-row-reverse md:justify-between items-center group">
+<div class="md:w-[45%] mb-4 md:mb-0 text-left pl-12 hidden md:block">
+<span class="font-headline text-2xl font-bold text-outline">2021</span>
+</div>
+<div class="absolute left-0 md:left-1/2 w-4 h-4 bg-surface-variant rounded-full -translate-x-1/2 z-10"></div>
+<div class="md:w-[45%] bg-surface-container p-6 rounded-md border-r-4 border-outline mr-8 md:mr-0">
+<span class="font-headline text-sm font-bold text-outline md:hidden block mb-2">2021</span>
+<h4 class="font-headline font-bold text-xl text-primary mb-2">Ethical Hacking Fundamentals</h4>
+<p class="text-sm text-on-surface-variant font-body mb-4">Star Certification. Initial introduction to the world of information security and ethical hacking methodology.</p>
+<div class="flex gap-2">
+<span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label uppercase">Foundational</span>
+<span class="px-2 py-1 bg-surface-container-highest text-[10px] font-label uppercase">Education</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Grid -->
+<section class="py-24 px-8 max-w-7xl mx-auto" id="projects">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<span class="font-label text-[10px] uppercase tracking-widest text-secondary">Portfolio</span>
+<h2 class="font-headline text-4xl font-bold text-primary">Shipped Projects</h2>
+</div>
+<div class="font-label text-xs text-on-surface-variant uppercase tracking-widest border-b border-outline-variant/30 pb-2">
+                    FILTER: ALL_SYSTEMS
+                </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Project 1 -->
+<a href="noovm.html" class="bg-surface-container flex flex-col h-full border border-transparent hover:border-secondary/20 transition-all group overflow-hidden">
+<div class="h-48 overflow-hidden bg-surface-container-highest relative">
+<img alt="Noo VM Preview" class="w-full h-full object-cover transition-all duration-500 scale-105 group-hover:scale-100" data-alt="Cybersecurity training lab dashboard concept UI" src="noo-vm.png"/>
+<div class="absolute top-4 left-4">
+<span class="px-2 py-2 bg-background/80 backdrop-blur-md text-[8px] font-label uppercase tracking-widest text-secondary flex items-center gap-1.5">
+    Status: 
+    <span class="relative flex h-1.5 w-1.5">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00FF41] opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-[#00FF41]"></span>
+    </span>
+    <span class="text-[#00FF41] font-bold">Live</span>
+</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline text-2xl font-bold mb-4 text-primary">Noo VM</h3>
+<p class="text-sm text-on-surface-variant font-body mb-6 flex-grow">
+                            AI-powered, browser-based cybersecurity training lab. VM-free interactive labs covering network recon, privEsc, and web security.
+                        </p>
+<div class="flex items-center justify-between mt-auto pt-6 border-t border-outline-variant/20">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-sm text-on-surface-variant">terminal</span>
+<span class="material-symbols-outlined text-sm text-on-surface-variant">cloud</span>
+</div>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</div>
+</div>
+</a>
+<!-- Project 2 -->
+<a href="witan.html" class="bg-surface-container flex flex-col h-full border border-transparent hover:border-secondary/20 transition-all group overflow-hidden">
+<div class="h-48 overflow-hidden bg-surface-container-highest relative">
+<img alt="Witan Bot Preview" class="w-full h-full object-cover transition-all duration-500 scale-105 group-hover:scale-100" data-alt="Discord bot interface with security data analytics" src="witan.png"/>
+<div class="absolute top-4 left-4">
+<span class="px-2 py-2 bg-background/80 backdrop-blur-md text-[8px] font-label uppercase tracking-widest text-secondary flex items-center gap-1.5">
+    Status: 
+    <span class="relative flex h-1.5 w-1.5">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00FF41] opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-[#00FF41]"></span>
+    </span>
+    <span class="text-[#00FF41] font-bold">Live</span>
+</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline text-2xl font-bold mb-4 text-primary">Witan</h3>
+<p class="text-sm text-on-surface-variant font-body mb-6 flex-grow">
+                            AI-powered Discord bot designed for security mentorship. URL scanning, daily security news, and automated study plan generation.
+                        </p>
+<div class="flex items-center justify-between mt-auto pt-6 border-t border-outline-variant/20">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-sm text-on-surface-variant">smart_toy</span>
+<span class="material-symbols-outlined text-sm text-on-surface-variant">monitoring</span>
+</div>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</div>
+</div>
+</a>
+<!-- Project 3 -->
+<a href="brief.html" class="bg-surface-container flex flex-col h-full border border-transparent hover:border-secondary/20 transition-all group overflow-hidden">
+<div class="h-48 overflow-hidden bg-surface-container-highest relative">
+<img alt="Brief CLI Preview" class="w-full h-full object-cover transition-all duration-500 scale-105 group-hover:scale-100" data-alt="Dark terminal session showing command line output" src="brief.png"/>
+<div class="absolute top-4 left-4">
+<span class="px-2 py-2 bg-background/80 backdrop-blur-md text-[8px] font-label uppercase tracking-widest text-secondary flex items-center gap-1.5">
+    Status: 
+    <span class="relative flex h-1.5 w-1.5">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00FF41] opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-[#00FF41]"></span>
+    </span>
+    <span class="text-[#00FF41] font-bold">Live</span>
+</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline text-2xl font-bold mb-4 text-primary">Brief</h3>
+<p class="text-sm text-on-surface-variant font-body mb-6 flex-grow">
+                            CLI tool for CTF methodology analysis. Automates terminal session recording and generates AI-powered post-mortem reports.
+                        </p>
+<div class="flex items-center justify-between mt-auto pt-6 border-t border-outline-variant/20">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-sm text-on-surface-variant">code</span>
+<span class="material-symbols-outlined text-sm text-on-surface-variant">history</span>
+</div>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</div>
+</div>
+</a>
+<!-- Project 4 -->
+<div class="bg-surface-container flex flex-col h-full border border-transparent hover:border-secondary/20 transition-all group overflow-hidden">
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline text-2xl font-bold mb-4 text-primary">EasyNote</h3>
+<p class="text-sm text-on-surface-variant font-body mb-6 flex-grow">
+                            HTB-Style Vulnerable Machine designed for internal training. Features multi-stage exploitation: SQLi to RCE to Root compromise.
+                        </p>
+<div class="flex items-center justify-between mt-auto pt-6 border-t border-outline-variant/20">
+<span class="text-[10px] font-label text-secondary px-2 py-1 bg-secondary-container/10">VULNERABLE_VM</span>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Project 5 -->
+<a href="goathash.html" class="bg-surface-container flex flex-col h-full border border-transparent hover:border-secondary/20 transition-all group overflow-hidden">
+<div class="h-48 overflow-hidden bg-surface-container-highest relative">
+<img alt="Goat Hash Preview" class="w-full h-full object-cover transition-all duration-500 scale-105 group-hover:scale-100" src="goathash.png"/>
+<div class="absolute top-4 left-4">
+<span class="px-2 py-2 bg-background/80 backdrop-blur-md text-[8px] font-label uppercase tracking-widest text-secondary flex items-center gap-1.5 border border-outline-variant/10">
+    Status: 
+    <span class="relative flex h-1.5 w-1.5">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00FF41] opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-[#00FF41]"></span>
+    </span>
+    <span class="text-[#00FF41] font-bold">Online</span>
+</span>
+</div>
+</div>
+<div class="p-8 flex flex-col flex-grow">
+<h3 class="font-headline text-2xl font-bold mb-4 text-primary">GoatHash</h3>
+<p class="text-sm text-on-surface-variant font-body mb-6 flex-grow">
+                            High-performance, zero-cost, and private hash lookup engine (MD5/NTLM/SHA) that runs entirely inside your browser via GitHub Pages.
+                        </p>
+<div class="flex items-center justify-between mt-auto pt-6 border-t border-outline-variant/20">
+<div class="flex gap-3">
+    <span class="material-symbols-outlined text-sm text-on-surface-variant">security</span>
+    <span class="material-symbols-outlined text-sm text-on-surface-variant">bolt</span>
+</div>
+<span class="material-symbols-outlined text-secondary opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</div>
+</div>
+</a>
+</div>
+</section>
+<!-- Certifications -->
+<section class="py-24 bg-surface-container-low" id="certifications">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16 text-center">
+<h2 class="font-headline text-4xl font-bold text-primary mb-2">Validated Expertise</h2>
+<p class="text-on-surface-variant font-label text-sm uppercase tracking-widest">Industry standard verification</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Cert 1: ARCX -->
+            <div class="bg-surface-container rounded-xl overflow-hidden border border-outline-variant/10 group hover:border-[#00FF41]/30 transition-all flex flex-col relative">
+                <div class="absolute top-4 left-4 z-20">
+                    <span class="px-2 py-1 bg-background/80 backdrop-blur-md text-[8px] font-label uppercase tracking-widest text-secondary border border-outline-variant/20">Issued: 2025</span>
+                </div>
+                <div class="aspect-[4/3] overflow-hidden bg-black flex items-center justify-center p-2">
+                    <img src="certs/arcx.jpg" alt="ARCX Certified" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-4 border-t border-outline-variant/10">
+                    <h4 class="font-headline text-lg font-bold text-primary">ARCX Certified</h4>
+                    <span class="text-[10px] font-label text-on-surface-variant uppercase tracking-widest">Offensive Operations</span>
+                </div>
+            </div>
+            
+            <!-- Cert 2: EHE -->
+            <div class="bg-surface-container rounded-xl overflow-hidden border border-outline-variant/10 group hover:border-[#00FF41]/30 transition-all flex flex-col relative">
+                <div class="absolute top-4 left-4 z-20">
+                    <span class="px-2 py-1 bg-background/80 backdrop-blur-md text-[8px] font-label uppercase tracking-widest text-secondary border border-outline-variant/20">Issued: 2021</span>
+                </div>
+                <div class="aspect-[4/3] overflow-hidden bg-black flex items-center justify-center p-2">
+                    <img src="certs/ehe.png" alt="Ethical Hacking Essentials" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-4 border-t border-outline-variant/10">
+                    <h4 class="font-headline text-lg font-bold text-primary">EHE</h4>
+                    <span class="text-[10px] font-label text-on-surface-variant uppercase tracking-widest">EC-Council Essentials</span>
+                </div>
+            </div>
+            
+            <!-- Cert 3: Jr PenTester -->
+            <div class="bg-surface-container rounded-xl overflow-hidden border border-outline-variant/10 group hover:border-[#00FF41]/30 transition-all flex flex-col relative">
+                <div class="absolute top-4 left-4 z-20">
+                    <span class="px-2 py-1 bg-background/80 backdrop-blur-md text-[8px] font-label uppercase tracking-widest text-secondary border border-outline-variant/20">Issued: 2024</span>
+                </div>
+                <div class="aspect-[4/3] overflow-hidden bg-black flex items-center justify-center p-2">
+                    <img src="certs/jr pen.png" alt="Jr. Penetration Tester" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-4 border-t border-outline-variant/10">
+                    <h4 class="font-headline text-lg font-bold text-primary">Jr. Penetration Tester</h4>
+                    <span class="text-[10px] font-label text-on-surface-variant uppercase tracking-widest">TryHackMe Certified</span>
+                </div>
+            </div>
+
+            <!-- Cert 4: SCSU -->
+            <div class="bg-surface-container rounded-xl overflow-hidden border border-outline-variant/10 group hover:border-[#00FF41]/30 transition-all flex flex-col relative">
+                <div class="absolute top-4 left-4 z-20">
+                    <span class="px-2 py-1 bg-background/80 backdrop-blur-md text-[8px] font-label uppercase tracking-widest text-secondary border border-outline-variant/20">Issued: 2019</span>
+                </div>
+                <div class="aspect-[4/3] overflow-hidden bg-black flex items-center justify-center p-2">
+                    <img src="certs/scsu.png" alt="SCSU Security" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-4 border-t border-outline-variant/10">
+                    <h4 class="font-headline text-lg font-bold text-primary">SCSU Security</h4>
+                    <span class="text-[10px] font-label text-on-surface-variant uppercase tracking-widest">Technical Validation</span>
+                </div>
+            </div>
+
+            <!-- Cert 5: Cloud Security -->
+            <div class="bg-surface-container rounded-xl overflow-hidden border border-outline-variant/10 group hover:border-[#00FF41]/30 transition-all flex flex-col relative">
+                <div class="absolute top-4 left-4 z-20">
+                    <span class="px-2 py-1 bg-background/80 backdrop-blur-md text-[8px] font-label uppercase tracking-widest text-secondary border border-outline-variant/20">Issued: 2021</span>
+                </div>
+                <div class="aspect-[4/3] overflow-hidden bg-black flex items-center justify-center p-2">
+                    <img src="certs/cloud.png" alt="Cloud Security" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-4 border-t border-outline-variant/10">
+                    <h4 class="font-headline text-lg font-bold text-primary">Cloud Security</h4>
+                    <span class="text-[10px] font-label text-on-surface-variant uppercase tracking-widest">Infrastructure Protection</span>
+                </div>
+            </div>
+
+            <!-- Cert 6: Pre-Security -->
+            <div class="bg-surface-container rounded-xl overflow-hidden border border-outline-variant/10 group hover:border-[#00FF41]/30 transition-all flex flex-col relative">
+                <div class="absolute top-4 left-4 z-20">
+                    <span class="px-2 py-1 bg-background/80 backdrop-blur-md text-[8px] font-label uppercase tracking-widest text-secondary border border-outline-variant/20">Issued: 2023</span>
+                </div>
+                <div class="aspect-[4/3] overflow-hidden bg-black flex items-center justify-center p-2">
+                    <img src="certs/pre.png" alt="Pre-Security" class="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-4 border-t border-outline-variant/10">
+                    <h4 class="font-headline text-lg font-bold text-primary">Pre-Security</h4>
+                    <span class="text-[10px] font-label text-on-surface-variant uppercase tracking-widest">Fundamentals THM</span>
+                </div>
+            </div>
+        </div>
+<div class="mt-12 p-8 border border-secondary/20 bg-secondary-container/5 rounded-md flex flex-col md:flex-row justify-between items-center gap-6">
+<div>
+<h3 class="font-headline text-xl font-bold text-secondary mb-2">In Progress // Training_Phase</h3>
+<p class="text-sm text-on-surface-variant max-w-lg">Actively working towards higher-level offensive certifications to sharpen technical capabilities.</p>
+</div>
+<div class="flex gap-4">
+<span class="font-headline font-bold text-2xl text-primary/40 px-4 border-r border-outline-variant">OSCP</span>
+<span class="font-headline font-bold text-2xl text-secondary px-4">CPTS+</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact/CTA -->
+<section class="py-24 px-8 max-w-4xl mx-auto text-center" id="contact">
+<h2 class="font-headline text-5xl font-bold mb-8 text-primary">Initiate Connection</h2>
+<p class="text-xl text-on-surface-variant mb-12">Looking for a dedicated security professional who values depth and technical integrity? Let's discuss potential collaborations.</p>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="bg-[rgb(6,227,255)] text-black px-10 py-4 rounded-md font-headline font-bold tracking-tight hover:scale-105 transition-transform" href="mailto:pravin@architect-os.com">
+                    SECURE_MESSAGE.SEND()
+                </a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<section class="w-full bg-[#131314] py-8 border-y border-[#edfcff]/5"><div class="scroll-container">
+<div class="animate-scroll flex gap-24 py-2">
+<!-- Original Content -->
+<div class="flex items-center gap-12 shrink-0">
+    <div class="flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity group">
+        <div class="w-10 h-10 rounded-full border border-[#00FF41]/20 flex items-center justify-center bg-[#00FF41]/5 overflow-hidden">
+            <img src="https://academy.hackthebox.com/storage/badges/academician.png" class="w-2/3 h-2/3 object-contain" alt="Academician">
+        </div>
+        <div class="flex flex-col">
+            <span class="font-label text-[8px] uppercase tracking-[0.2em] text-[#edfcff]/50">HTB Academy</span>
+            <span class="font-headline text-[10px] font-bold text-[#00FF41] uppercase">Academician</span>
+        </div>
+    </div>
+    <div class="flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity group">
+        <div class="w-10 h-10 rounded-full border border-[#00FF41]/20 flex items-center justify-center bg-[#00FF41]/5 overflow-hidden">
+            <img src="https://assets.tryhackme.com/img/badges/advent-of-cyber-2025.png" class="w-2/3 h-2/3 object-contain" alt="Advent 2025">
+        </div>
+        <div class="flex flex-col">
+            <span class="font-label text-[8px] uppercase tracking-[0.2em] text-[#edfcff]/50">TryHackMe</span>
+            <span class="font-headline text-[10px] font-bold text-[#00FF41] uppercase">AoC 2025</span>
+        </div>
+    </div>
+    <div class="flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity group">
+        <div class="w-10 h-10 rounded-full border border-[#00FF41]/20 flex items-center justify-center bg-[#00FF41]/5 overflow-hidden">
+            <img src="https://assets.tryhackme.com/img/badges/league-saphire.png" class="w-2/3 h-2/3 object-contain" alt="Saphire">
+        </div>
+        <div class="flex flex-col">
+            <span class="font-label text-[8px] uppercase tracking-[0.2em] text-[#edfcff]/50">TryHackMe</span>
+            <span class="font-headline text-[10px] font-bold text-[#00FF41] uppercase">Saphire League</span>
+        </div>
+    </div>
+    <div class="flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity group">
+        <div class="w-10 h-10 rounded-full border border-[#00FF41]/20 flex items-center justify-center bg-[#00FF41]/5 overflow-hidden">
+            <img src="https://academy.hackthebox.com/storage/badges/the-eye-that-sees-all.png" class="w-2/3 h-2/3 object-contain" alt="Nmap">
+        </div>
+        <div class="flex flex-col">
+            <span class="font-label text-[8px] uppercase tracking-[0.2em] text-[#edfcff]/50">HTB Academy</span>
+            <span class="font-headline text-[10px] font-bold text-[#00FF41] uppercase">Nmap Specialist</span>
+        </div>
+    </div>
+    <div class="flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity group">
+        <div class="w-10 h-10 rounded-full border border-[#00FF41]/20 flex items-center justify-center bg-[#00FF41]/5 overflow-hidden">
+            <img src="https://assets.tryhackme.com/img/badges/burpsuite.png" class="w-2/3 h-2/3 object-contain" alt="Burp'ed">
+        </div>
+        <div class="flex flex-col">
+            <span class="font-label text-[8px] uppercase tracking-[0.2em] text-[#edfcff]/50">TryHackMe</span>
+            <span class="font-headline text-[10px] font-bold text-[#00FF41] uppercase">Burp'ed</span>
+        </div>
+    </div>
+    <div class="flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity group">
+        <div class="w-10 h-10 rounded-full border border-[#00FF41]/20 flex items-center justify-center bg-[#00FF41]/5 overflow-hidden">
+            <img src="https://assets.tryhackme.com/img/badges/hack2win.png" class="w-2/3 h-2/3 object-contain" alt="Hack2Win">
+        </div>
+        <div class="flex flex-col">
+            <span class="font-label text-[8px] uppercase tracking-[0.2em] text-[#edfcff]/50">TryHackMe</span>
+            <span class="font-headline text-[10px] font-bold text-[#00FF41] uppercase">Hack2Win</span>
+        </div>
+    </div>
+    <div class="flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity group">
+        <div class="w-10 h-10 rounded-full border border-[#00FF41]/20 flex items-center justify-center bg-[#00FF41]/5 overflow-hidden">
+            <img src="https://academy.hackthebox.com/storage/badges/ghost-in-the-shell.png" class="w-2/3 h-2/3 object-contain" alt="Shells">
+        </div>
+        <div class="flex flex-col">
+            <span class="font-label text-[8px] uppercase tracking-[0.2em] text-[#edfcff]/50">HTB Academy</span>
+            <span class="font-headline text-[10px] font-bold text-[#00FF41] uppercase">Ghost in the Shell</span>
+        </div>
+    </div>
+    <div class="flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity group">
+        <div class="w-10 h-10 rounded-full border border-[#00FF41]/20 flex items-center justify-center bg-[#00FF41]/5 overflow-hidden">
+            <img src="https://assets.tryhackme.com/img/badges/owasptop10.png" class="w-2/3 h-2/3 object-contain" alt="OWASP">
+        </div>
+        <div class="flex flex-col">
+            <span class="font-label text-[8px] uppercase tracking-[0.2em] text-[#edfcff]/50">TryHackMe</span>
+            <span class="font-headline text-[10px] font-bold text-[#00FF41] uppercase">OWASP Top 10</span>
+        </div>
+    </div>
+    <div class="flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity group">
+        <div class="w-10 h-10 rounded-full border border-[#00FF41]/20 flex items-center justify-center bg-[#00FF41]/5 overflow-hidden">
+            <img src="https://assets.tryhackme.com/img/badges/metasploit.png" class="w-2/3 h-2/3 object-contain" alt="Metasploit">
+        </div>
+        <div class="flex flex-col">
+            <span class="font-label text-[8px] uppercase tracking-[0.2em] text-[#edfcff]/50">TryHackMe</span>
+            <span class="font-headline text-[10px] font-bold text-[#00FF41] uppercase">Metasploit</span>
+        </div>
+    </div>
+    <div class="flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity group">
+        <div class="w-10 h-10 rounded-full border border-[#00FF41]/20 flex items-center justify-center bg-[#00FF41]/5 overflow-hidden">
+            <img src="https://academy.hackthebox.com/storage/badges/60fc416b5eec425a6451aeb1e50d14e4/logo.png" class="w-2/3 h-2/3 object-contain" alt="Rookie 365">
+        </div>
+        <div class="flex flex-col">
+            <span class="font-label text-[8px] uppercase tracking-[0.2em] text-[#edfcff]/50">HTB Academy</span>
+            <span class="font-headline text-[10px] font-bold text-[#00FF41] uppercase">Cyber Rookie 365</span>
+        </div>
+    </div>
+</div>
+<!-- Repeated Content for Infinite Loop -->
+<div class="flex items-center gap-12 shrink-0">
+    <div class="flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity group">
+        <div class="w-10 h-10 rounded-full border border-[#00FF41]/20 flex items-center justify-center bg-[#00FF41]/5 overflow-hidden">
+            <img src="https://academy.hackthebox.com/storage/badges/academician.png" class="w-2/3 h-2/3 object-contain" alt="Academician">
+        </div>
+        <div class="flex flex-col">
+            <span class="font-label text-[8px] uppercase tracking-[0.2em] text-[#edfcff]/50">HTB Academy</span>
+            <span class="font-headline text-[10px] font-bold text-[#00FF41] uppercase">Academician</span>
+        </div>
+    </div>
+    <div class="flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity group">
+        <div class="w-10 h-10 rounded-full border border-[#00FF41]/20 flex items-center justify-center bg-[#00FF41]/5 overflow-hidden">
+            <img src="https://assets.tryhackme.com/img/badges/advent-of-cyber-2025.png" class="w-2/3 h-2/3 object-contain" alt="Advent 2025">
+        </div>
+        <div class="flex flex-col">
+            <span class="font-label text-[8px] uppercase tracking-[0.2em] text-[#edfcff]/50">TryHackMe</span>
+            <span class="font-headline text-[10px] font-bold text-[#00FF41] uppercase">AoC 2025</span>
+        </div>
+    </div>
+    <div class="flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity group">
+        <div class="w-10 h-10 rounded-full border border-[#00FF41]/20 flex items-center justify-center bg-[#00FF41]/5 overflow-hidden">
+            <img src="https://assets.tryhackme.com/img/badges/league-saphire.png" class="w-2/3 h-2/3 object-contain" alt="Saphire">
+        </div>
+        <div class="flex flex-col">
+            <span class="font-label text-[8px] uppercase tracking-[0.2em] text-[#edfcff]/50">TryHackMe</span>
+            <span class="font-headline text-[10px] font-bold text-[#00FF41] uppercase">Saphire League</span>
+        </div>
+    </div>
+    <div class="flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity group">
+        <div class="w-10 h-10 rounded-full border border-[#00FF41]/20 flex items-center justify-center bg-[#00FF41]/5 overflow-hidden">
+            <img src="https://academy.hackthebox.com/storage/badges/the-eye-that-sees-all.png" class="w-2/3 h-2/3 object-contain" alt="Nmap">
+        </div>
+        <div class="flex flex-col">
+            <span class="font-label text-[8px] uppercase tracking-[0.2em] text-[#edfcff]/50">HTB Academy</span>
+            <span class="font-headline text-[10px] font-bold text-[#00FF41] uppercase">Nmap Specialist</span>
+        </div>
+    </div>
+    <div class="flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity group">
+        <div class="w-10 h-10 rounded-full border border-[#00FF41]/20 flex items-center justify-center bg-[#00FF41]/5 overflow-hidden">
+            <img src="https://assets.tryhackme.com/img/badges/burpsuite.png" class="w-2/3 h-2/3 object-contain" alt="Burp'ed">
+        </div>
+        <div class="flex flex-col">
+            <span class="font-label text-[8px] uppercase tracking-[0.2em] text-[#edfcff]/50">TryHackMe</span>
+            <span class="font-headline text-[10px] font-bold text-[#00FF41] uppercase">Burp'ed</span>
+        </div>
+    </div>
+    <div class="flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity group">
+        <div class="w-10 h-10 rounded-full border border-[#00FF41]/20 flex items-center justify-center bg-[#00FF41]/5 overflow-hidden">
+            <img src="https://assets.tryhackme.com/img/badges/hack2win.png" class="w-2/3 h-2/3 object-contain" alt="Hack2Win">
+        </div>
+        <div class="flex flex-col">
+            <span class="font-label text-[8px] uppercase tracking-[0.2em] text-[#edfcff]/50">TryHackMe</span>
+            <span class="font-headline text-[10px] font-bold text-[#00FF41] uppercase">Hack2Win</span>
+        </div>
+    </div>
+    <div class="flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity group">
+        <div class="w-10 h-10 rounded-full border border-[#00FF41]/20 flex items-center justify-center bg-[#00FF41]/5 overflow-hidden">
+            <img src="https://academy.hackthebox.com/storage/badges/ghost-in-the-shell.png" class="w-2/3 h-2/3 object-contain" alt="Shells">
+        </div>
+        <div class="flex flex-col">
+            <span class="font-label text-[8px] uppercase tracking-[0.2em] text-[#edfcff]/50">HTB Academy</span>
+            <span class="font-headline text-[10px] font-bold text-[#00FF41] uppercase">Ghost in the Shell</span>
+        </div>
+    </div>
+    <div class="flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity group">
+        <div class="w-10 h-10 rounded-full border border-[#00FF41]/20 flex items-center justify-center bg-[#00FF41]/5 overflow-hidden">
+            <img src="https://assets.tryhackme.com/img/badges/owasptop10.png" class="w-2/3 h-2/3 object-contain" alt="OWASP">
+        </div>
+        <div class="flex flex-col">
+            <span class="font-label text-[8px] uppercase tracking-[0.2em] text-[#edfcff]/50">TryHackMe</span>
+            <span class="font-headline text-[10px] font-bold text-[#00FF41] uppercase">OWASP Top 10</span>
+        </div>
+    </div>
+    <div class="flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity group">
+        <div class="w-10 h-10 rounded-full border border-[#00FF41]/20 flex items-center justify-center bg-[#00FF41]/5 overflow-hidden">
+            <img src="https://assets.tryhackme.com/img/badges/metasploit.png" class="w-2/3 h-2/3 object-contain" alt="Metasploit">
+        </div>
+        <div class="flex flex-col">
+            <span class="font-label text-[8px] uppercase tracking-[0.2em] text-[#edfcff]/50">TryHackMe</span>
+            <span class="font-headline text-[10px] font-bold text-[#00FF41] uppercase">Metasploit</span>
+        </div>
+    </div>
+    <div class="flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity group">
+        <div class="w-10 h-10 rounded-full border border-[#00FF41]/20 flex items-center justify-center bg-[#00FF41]/5 overflow-hidden">
+            <img src="https://academy.hackthebox.com/storage/badges/60fc416b5eec425a6451aeb1e50d14e4/logo.png" class="w-2/3 h-2/3 object-contain" alt="Rookie 365">
+        </div>
+        <div class="flex flex-col">
+            <span class="font-label text-[8px] uppercase tracking-[0.2em] text-[#edfcff]/50">HTB Academy</span>
+            <span class="font-headline text-[10px] font-bold text-[#00FF41] uppercase">Cyber Rookie 365</span>
+        </div>
+    </div>
+</div>
+
+<!-- Duplicated Content for Seamless Loop -->
+<div class="flex items-center gap-12 shrink-0">
+<div class="flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity group">
+<div class="w-10 h-10 rounded-full border border-[#00FF41]/20 flex items-center justify-center bg-[#00FF41]/5">
+<span class="material-symbols-outlined text-[#00FF41] text-xl">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label text-[8px] uppercase tracking-[0.2em] text-[#edfcff]/50">HTB</span>
+<span class="font-headline text-[10px] font-bold text-[#00FF41] uppercase">Certified Professional</span>
+</div>
+</div>
+<div class="flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity group">
+<div class="w-10 h-10 rounded-full border border-[#00FF41]/20 flex items-center justify-center bg-[#00FF41]/5">
+<span class="material-symbols-outlined text-[#00FF41] text-xl">terminal</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label text-[8px] uppercase tracking-[0.2em] text-[#edfcff]/50">TryHackMe</span>
+<span class="font-headline text-[10px] font-bold text-[#00FF41] uppercase">Certified Professional</span>
+</div>
+</div>
+<div class="flex items-center gap-4 opacity-70 hover:opacity-100 transition-opacity group">
+<div class="w-10 h-10 rounded-full border border-[#00FF41]/20 flex items-center justify-center bg-[#00FF41]/5">
+<span class="material-symbols-outlined text-[#00FF41] text-xl">star</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label text-[8px] uppercase tracking-[0.2em] text-[#edfcff]/50">Star</span>
+<span class="font-headline text-[10px] font-bold text-[#00FF41] uppercase">Certified Professional</span>
+</div>
+</div>
+</div>
+</div>
+</div></section><footer class="bg-[#131314] w-full py-12 border-t border-[#edfcff]/5">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-6">
+<div class="text-[#00FF41] font-bold font-headline">Pravin Mohite.</div>
+<div class="font-['Manrope'] text-[10px] uppercase tracking-[0.2em] text-[#edfcff]">
+                © 2024 SYSTEM_ARCHITECT // SECURED_CONNECTION
+            </div>
+<div class="flex gap-8">
+<a class="font-['Manrope'] text-[10px] uppercase tracking-[0.2em] text-[#edfcff]/40 hover:text-[#00FF41] transition-colors" href="#">GitHub</a>
+<a class="font-['Manrope'] text-[10px] uppercase tracking-[0.2em] text-[#edfcff]/40 hover:text-[#00FF41] transition-colors" href="#">LinkedIn</a>
+<a class="font-['Manrope'] text-[10px] uppercase tracking-[0.2em] text-[#edfcff]/40 hover:text-[#00FF41] transition-colors" href="#">Twitter</a>
+</div>
+</div>
+</footer>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const navLinks = document.querySelectorAll("nav .hidden.md\\:flex a");
+        const sections = document.querySelectorAll("section[id]");
+        
+        window.addEventListener("scroll", () => {
+            let current = "";
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 250) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            if (scrollY < 100) {
+                current = "overview";
+            }
+
+            navLinks.forEach(link => {
+                link.className = "text-[#edfcff]/60 hover:text-[#edfcff] transition-colors font-headline tracking-tight"; // Reset all
+                if (current && link.getAttribute("href") === `#${current}`) {
+                    link.className = "text-[#00FF41] border-b-2 border-[#00FF41] pb-1 font-headline tracking-tight transition-colors";
+                }
+            });
+        });
+    });
+</script>
+</body></html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Brief | AI-Powered Post-Mortem</title>
+<link rel="icon" type="image/jpeg" href="profile.jpg">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#b9ccb2",
+              "tertiary-container": "#e3d6ff",
+              "on-tertiary-fixed": "#22005d",
+              "on-error-container": "#ffdad6",
+              "on-error": "#690005",
+              "tertiary": "#fdf7ff",
+              "on-tertiary-container": "#6f27fb",
+              "surface": "#131314",
+              "inverse-primary": "#006875",
+              "on-tertiary": "#3a0093",
+              "secondary-container": "#13ff43",
+              "on-secondary-container": "#007117",
+              "inverse-surface": "#e5e2e3",
+              "on-primary-fixed-variant": "#004f58",
+              "on-tertiary-fixed-variant": "#5300cd",
+              "tertiary-fixed-dim": "#cfbdff",
+              "surface-container-high": "#2a2a2b",
+              "surface-container": "#201f20",
+              "error": "#ffb4ab",
+              "surface-container-highest": "#353436",
+              "error-container": "#93000a",
+              "surface-tint": "#00daf3",
+              "on-secondary-fixed": "#002203",
+              "outline-variant": "#3b4b37",
+              "surface-dim": "#131314",
+              "on-background": "#e5e2e3",
+              "outline": "#84967e",
+              "on-primary-fixed": "#001f24",
+              "on-primary-container": "#006b78",
+              "surface-container-low": "#1c1b1c",
+              "surface-bright": "#3a393a",
+              "primary-fixed-dim": "#006875",
+              "on-primary": "#00363d",
+              "surface-variant": "#353436",
+              "primary-fixed": "#9cf0ff",
+              "on-surface": "#e5e2e3",
+              "secondary": "#ecffe3",
+              "secondary-fixed-dim": "#00e639",
+              "secondary-fixed": "#72ff70",
+              "tertiary-fixed": "#e8ddff",
+              "on-secondary-fixed-variant": "#00530e",
+              "primary": "#edfcff",
+              "background": "#131314",
+              "inverse-on-surface": "#313031",
+              "primary-container": "#80ecff",
+              "on-secondary": "#003907",
+              "surface-container-lowest": "#0e0e0f"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #131314;
+            color: #edfcff;
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#131314]/80 backdrop-blur-xl border-b border-[#edfcff]/5 shadow-2xl shadow-black/50">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<a href="index.html" class="flex items-center gap-3 text-2xl font-bold tracking-tighter text-[#00FF41] font-['Space_Grotesk'] hover:text-white transition-colors group">
+    <div class="w-8 h-8 rounded-full overflow-hidden border border-[#00FF41]/20 group-hover:border-[#00FF41]/50 transition-colors">
+        <img src="profile.jpg" alt="P" class="w-full h-full object-cover">
+    </div>
+    Pravin Mohite.
+</a>
+<div class="hidden md:flex items-center gap-8 font-['Space_Grotesk'] tracking-tight">
+<a class="text-[#00FF41] font-bold border-b-2 border-[#00FF41] pb-1" href="#overview">Overview</a>
+<a class="text-[#edfcff]/60 hover:text-[#edfcff] transition-colors" href="#features">Capabilities</a>
+<a class="text-[#edfcff]/60 hover:text-[#edfcff] transition-colors" href="#usage">Usage</a>
+<a class="text-[#edfcff]/60 hover:text-[#edfcff] transition-colors" href="#documentation">Documentation</a>
+</div>
+<div class="flex items-center gap-4">
+<a href="https://github.com/icypenguin01/Brief.git" target="_blank" class="bg-[rgb(6,227,255)] text-black px-5 py-2 rounded-lg font-label font-bold text-sm tracking-tight hover:brightness-110 active:scale-95 transition-all inline-block">
+                    Install brief
+                </a>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section id="overview" class="relative px-8 py-20 lg:py-32 max-w-7xl mx-auto overflow-hidden">
+<div class="relative z-10 flex flex-col items-center text-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/10 border border-secondary-container/20 mb-8">
+<span class="material-symbols-outlined text-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-secondary-container font-extrabold">Reflection over Automation</span>
+</div>
+<h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-primary max-w-4xl mb-6">
+                    Brief — <span class="text-secondary-container">AI-Powered Post-Mortem</span>
+</h1>
+<p class="font-body text-on-surface-variant text-lg md:text-xl max-w-2xl mb-12 leading-relaxed">
+                    A CLI tool designed to help CTF players and cybersecurity learners improve their methodology. Every machine becomes a post-mortem. Every mistake becomes feedback.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="https://icypenguin01.github.io/Brief/sample-report.html" target="_blank" class="bg-[rgb(6,227,255)] text-black px-8 py-4 rounded-lg font-headline font-bold text-lg hover:shadow-[0_0_30px_rgba(6,227,255,0.3)] transition-all flex items-center gap-2 justify-center">
+<span class="material-symbols-outlined">description</span> View Sample Report
+                    </a>
+<a href="https://github.com/icypenguin01/Brief.git" target="_blank" class="border border-outline-variant text-primary px-8 py-4 rounded-lg font-headline font-bold text-lg hover:bg-surface-container-high transition-all flex items-center gap-2 justify-center">
+<span class="material-symbols-outlined">code</span> GitHub Repository
+                    </a>
+</div>
+</div>
+
+</section>
+<!-- Why Witan Bento Grid -->
+<section id="features" class="px-8 py-20 max-w-7xl mx-auto">
+<div class="flex flex-col mb-16">
+<span class="font-label text-xs uppercase tracking-widest text-secondary-container font-bold mb-2">Capabilities</span>
+<h2 class="font-headline text-4xl font-bold text-primary">Why Brief?</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- AI Mentorship -->
+<div class="md:col-span-8 p-8 rounded-xl bg-surface-container-low flex flex-col justify-between group hover:bg-surface-container transition-colors">
+<div>
+<span class="material-symbols-outlined text-secondary-container mb-6 text-4xl">analytics</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Structured Methodology Analysis</h3>
+<p class="font-body text-on-surface-variant max-w-md leading-relaxed">
+                            Instead of just telling you “this was wrong,” it explains why it was wrong, what assumption led to it, and what a stronger methodology would look like from recon to privilege escalation.
+                        </p>
+</div>
+<div class="mt-12 flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded bg-surface-container-highest text-on-surface-variant font-label text-[10px] uppercase tracking-wider">CTF Feedback</span>
+<span class="px-3 py-1 rounded bg-surface-container-highest text-on-surface-variant font-label text-[10px] uppercase tracking-wider">Workflow Breakdown</span>
+<span class="px-3 py-1 rounded bg-surface-container-highest text-on-surface-variant font-label text-[10px] uppercase tracking-wider">Phase Tracking</span>
+</div>
+</div>
+<!-- URL Scanning -->
+<div class="md:col-span-4 p-8 rounded-xl bg-surface-container-highest flex flex-col border border-outline-variant/10 group">
+<span class="material-symbols-outlined text-secondary-container mb-6 text-4xl">warning</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Flags Rushed Scans</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                        Identifies duplicated or unnecessary scans, weak sequencing, and rushed enumeration tactics.
+                    </p>
+<div class="mt-auto pt-8 border-t border-outline-variant/20 flex items-center justify-between">
+<span class="font-label text-xs text-secondary-container">Efficiency Analysis</span>
+<span class="material-symbols-outlined text-secondary-container">check_circle</span>
+</div>
+</div>
+<!-- Daily News -->
+<div class="md:col-span-4 p-8 rounded-xl bg-surface-container-low flex flex-col border border-outline-variant/10">
+<span class="material-symbols-outlined text-secondary-container mb-6 text-4xl">bug_report</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Command Misuse Highlighting</h3>
+<p class="font-body text-on-surface-variant leading-relaxed text-sm">
+                        Highlights bad payload handling or command misuse in real time across the recorded terminal session.
+                    </p>
+</div>
+<!-- Goal & Reminder -->
+<div class="md:col-span-8 p-8 rounded-xl bg-surface-container-low flex items-center gap-8 border border-outline-variant/10">
+<div class="flex-1">
+<span class="material-symbols-outlined text-secondary-container mb-6 text-4xl">military_tech</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Inspired by Offensive Security workflows</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                            Built with the mindset of OffSec certifications, promoting structured methodology over chaotic command spraying.
+                        </p>
+</div>
+<div class="hidden lg:block w-48 h-48 bg-surface-container-highest rounded-full border-4 border-secondary-container/20 flex items-center justify-center">
+<div class="text-center">
+<div class="font-headline text-4xl font-bold text-secondary-container">1.0</div>
+<div class="font-label text-[10px] uppercase text-on-surface-variant">CLI Version</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Intel Modules -->
+<section id="usage" class="px-8 py-20 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col items-center text-center mb-16">
+<h2 class="font-headline text-4xl font-bold text-primary mb-4">How it works</h2>
+<div class="h-1 w-20 bg-secondary-container"></div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+<!-- Intel Module 1 -->
+<div class="space-y-6">
+<div class="flex items-center gap-3">
+<span class="text-secondary-container font-headline font-bold text-xl">01</span>
+<h4 class="font-headline text-xl font-bold tracking-tight uppercase">Start Recording</h4>
+</div>
+<div class="p-6 bg-surface-container-high rounded-xl border-l-4 border-secondary-container h-32 flex flex-col justify-center">
+<div class="font-mono text-sm text-primary mb-2">> brief --start</div>
+<div class="font-mono text-xs text-on-surface-variant opacity-70">Starting terminal session recording...</div>
+</div>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed">
+                            Start recording your session before you tackle the box. Export your HUGGING FACE TOKEN first.
+                        </p>
+</div>
+<!-- Intel Module 2 -->
+<div class="space-y-6">
+<div class="flex items-center gap-3">
+<span class="text-secondary-container font-headline font-bold text-xl">02</span>
+<h4 class="font-headline text-xl font-bold tracking-tight uppercase">Solve the Box</h4>
+</div>
+<div class="p-6 bg-surface-container-high rounded-xl border-l-4 border-outline-variant h-32 flex flex-col justify-center">
+<div class="font-mono text-sm text-primary mb-2">> nmap -sC -sV 10.x.x.x</div>
+<div class="font-mono text-xs text-on-surface-variant opacity-70">... solving the machine normally ...</div>
+</div>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed">
+                            Work through the machine as you usually would. Brief silently records your workflow in the background.
+                        </p>
+</div>
+<!-- Intel Module 3 -->
+<div class="space-y-6">
+<div class="flex items-center gap-3">
+<span class="text-secondary-container font-headline font-bold text-xl">03</span>
+<h4 class="font-headline text-xl font-bold tracking-tight uppercase">Generate Report</h4>
+</div>
+<div class="p-6 bg-surface-container-high rounded-xl border-l-4 border-secondary-container h-32 flex flex-col justify-center">
+<div class="font-mono text-sm text-primary mb-2">> brief --stop</div>
+<div class="font-mono text-sm text-primary">> brief --latest</div>
+</div>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed">
+                            Stop the recording and generate a structured AI-powered after-action report detailing your methodology.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Slash Commands Grid -->
+<section class="px-8 py-20 max-w-7xl mx-auto">
+<div class="mb-12">
+<h2 class="font-headline text-3xl font-bold text-primary mb-2">CLI Interface</h2>
+<p class="font-body text-on-surface-variant text-sm uppercase tracking-widest">Core Commands</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<div class="p-4 bg-surface-container rounded border-l-2 border-secondary-container/30 hover:border-secondary-container transition-all cursor-default">
+<div class="flex items-center justify-between mb-2">
+<span class="font-headline text-secondary-container font-bold">brief --start</span>
+<span class="material-symbols-outlined text-on-surface-variant text-sm">terminal</span>
+</div>
+<p class="font-body text-xs text-on-surface-variant">Starts recording the current terminal session.</p>
+</div>
+<div class="p-4 bg-surface-container rounded border-l-2 border-secondary-container/30 hover:border-secondary-container transition-all cursor-default">
+<div class="flex items-center justify-between mb-2">
+<span class="font-headline text-secondary-container font-bold">brief --stop</span>
+<span class="material-symbols-outlined text-on-surface-variant text-sm">terminal</span>
+</div>
+<p class="font-body text-xs text-on-surface-variant">Stops the recording process and saves logs.</p>
+</div>
+<div class="p-4 bg-surface-container rounded border-l-2 border-secondary-container/30 hover:border-secondary-container transition-all cursor-default">
+<div class="flex items-center justify-between mb-2">
+<span class="font-headline text-secondary-container font-bold">brief --latest</span>
+<span class="material-symbols-outlined text-on-surface-variant text-sm">terminal</span>
+</div>
+<p class="font-body text-xs text-on-surface-variant">Generates an AI report based on the most recent session.</p>
+</div>
+<div class="p-4 bg-surface-container rounded border-l-2 border-secondary-container/30 hover:border-secondary-container transition-all cursor-default">
+<div class="flex items-center justify-between mb-2">
+<span class="font-headline text-secondary-container font-bold">brief -i &lt;file&gt;</span>
+<span class="material-symbols-outlined text-on-surface-variant text-sm">terminal</span>
+</div>
+<p class="font-body text-xs text-on-surface-variant">Generates a report for a specific saved session log.</p>
+</div>
+</div>
+</section>
+<!-- System Demonstration -->
+<section class="px-8 py-20 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<div class="bg-surface-container-high rounded-2xl overflow-hidden aspect-video relative group border border-outline-variant/10">
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center z-10">
+<a href="https://youtu.be/xeCwmH8kPNE?si=BS9YFDZf973voxgo" target="_blank" class="w-20 h-20 bg-[rgb(6,227,255)] text-black rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-[0_0_50px_rgba(6,227,255,0.4)]">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</a>
+</div>
+<div class="w-full h-full bg-[#1c1b1c] flex flex-col items-center justify-center text-[#edfcff]/50">
+<span class="material-symbols-outlined text-6xl mb-4">smart_display</span>
+</div>
+<div class="absolute bottom-6 left-8 z-20">
+<p class="font-label text-xs uppercase tracking-widest text-secondary-container font-bold">Demo Video</p>
+<h3 class="font-headline text-2xl font-bold">Brief in Action</h3>
+</div>
+</div>
+
+<div class="bg-surface-container-high rounded-2xl overflow-hidden aspect-video relative group border border-outline-variant/10">
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center z-10">
+<a href="https://youtu.be/kzsWUGs0OwI?si=bD3YrGWWlbQSUv2Z" target="_blank" class="w-20 h-20 bg-[rgb(6,227,255)] text-black rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-[0_0_50px_rgba(6,227,255,0.4)]">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</a>
+</div>
+<div class="w-full h-full bg-[#1c1b1c] flex flex-col items-center justify-center text-[#edfcff]/50">
+<span class="material-symbols-outlined text-6xl mb-4">smart_display</span>
+</div>
+<div class="absolute bottom-6 left-8 z-20">
+<p class="font-label text-xs uppercase tracking-widest text-secondary-container font-bold">Inspiration</p>
+<h3 class="font-headline text-2xl font-bold">Story Of Brief
+</div>
+</div>
+</div>
+</section>
+<!-- Deploy Sentinel Footer CTA -->
+<section id="documentation" class="px-8 py-24 bg-surface-container-low border-t border-outline-variant/10 text-center">
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-primary mb-8 tracking-tighter">Ready to Improve Your Methodology?</h2>
+<p class="font-body text-on-surface-variant max-w-xl mx-auto mb-12">
+                Clone the repository today and transform your chaotic workflow into a structured, professional approach.
+            </p>
+<a href="https://github.com/icypenguin01/Brief.git" target="_blank" class="bg-[rgb(6,227,255)] text-black px-12 py-5 rounded-lg font-headline font-bold text-xl hover:brightness-110 transition-all flex items-center gap-3 mx-auto max-w-max shadow-[0_20px_40px_rgba(0,0,0,0.4)]">
+<span class="material-symbols-outlined">download</span> Clone Repo
+            </a>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#131314] w-full py-12 border-t border-[#edfcff]/5">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-4">
+<div class="text-[#edfcff] font-bold font-['Manrope'] text-xs uppercase tracking-widest">
+                Brief Tool
+            </div>
+<div class="flex gap-8">
+<a class="text-[#edfcff]/40 hover:text-[#00FF41] transition-colors font-['Manrope'] text-xs uppercase tracking-widest" href="https://icypenguin01.github.io/Brief/sample-report.html" target="_blank">Sample Report</a>
+<a class="text-[#edfcff]/40 hover:text-[#00FF41] transition-colors font-['Manrope'] text-xs uppercase tracking-widest" href="https://github.com/icypenguin01/Brief.git" target="_blank">GitHub</a>
+</div>
+<div class="text-[#00FF41] font-['Manrope'] text-xs uppercase tracking-widest">
+                © 2024 Brief. Open Source.
+            </div>
+</div>
+</footer>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const navLinks = document.querySelectorAll("nav .hidden.md\\:flex a");
+        const sections = document.querySelectorAll("section[id]");
+        
+        window.addEventListener("scroll", () => {
+            let current = "";
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 250) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            if (scrollY < 100) {
+                current = "overview";
+            }
+
+            navLinks.forEach(link => {
+                link.className = "text-[#edfcff]/60 hover:text-[#edfcff] transition-colors"; // Reset all
+                if (current === "home" && link.getAttribute("href") === "index.html") {
+                    link.className = "text-[#00FF41] font-bold border-b-2 border-[#00FF41] pb-1 transition-colors";
+                } else if (link.getAttribute("href") === `#${current}`) {
+                    link.className = "text-[#00FF41] font-bold border-b-2 border-[#00FF41] pb-1 transition-colors";
+                }
+            });
+        });
+    });
+</script>
+</body></html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Witan AI | Security Sentinel</title>
+<link rel="icon" type="image/jpeg" href="profile.jpg">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@400;500;600&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#b9ccb2",
+              "tertiary-container": "#e3d6ff",
+              "on-tertiary-fixed": "#22005d",
+              "on-error-container": "#ffdad6",
+              "on-error": "#690005",
+              "tertiary": "#fdf7ff",
+              "on-tertiary-container": "#6f27fb",
+              "surface": "#131314",
+              "inverse-primary": "#006875",
+              "on-tertiary": "#3a0093",
+              "secondary-container": "#13ff43",
+              "on-secondary-container": "#007117",
+              "inverse-surface": "#e5e2e3",
+              "on-primary-fixed-variant": "#004f58",
+              "on-tertiary-fixed-variant": "#5300cd",
+              "tertiary-fixed-dim": "#cfbdff",
+              "surface-container-high": "#2a2a2b",
+              "surface-container": "#201f20",
+              "error": "#ffb4ab",
+              "surface-container-highest": "#353436",
+              "error-container": "#93000a",
+              "surface-tint": "#00daf3",
+              "on-secondary-fixed": "#002203",
+              "outline-variant": "#3b4b37",
+              "surface-dim": "#131314",
+              "on-background": "#e5e2e3",
+              "outline": "#84967e",
+              "on-primary-fixed": "#001f24",
+              "on-primary-container": "#006b78",
+              "surface-container-low": "#1c1b1c",
+              "surface-bright": "#3a393a",
+              "primary-fixed-dim": "#006875",
+              "on-primary": "#00363d",
+              "surface-variant": "#353436",
+              "primary-fixed": "#9cf0ff",
+              "on-surface": "#e5e2e3",
+              "secondary": "#ecffe3",
+              "secondary-fixed-dim": "#00e639",
+              "secondary-fixed": "#72ff70",
+              "tertiary-fixed": "#e8ddff",
+              "on-secondary-fixed-variant": "#00530e",
+              "primary": "#edfcff",
+              "background": "#131314",
+              "inverse-on-surface": "#313031",
+              "primary-container": "#80ecff",
+              "on-secondary": "#003907",
+              "surface-container-lowest": "#0e0e0f"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #131314;
+            color: #edfcff;
+            font-family: 'Inter', sans-serif;
+        }
+        .glass-panel {
+            background: rgba(32, 31, 32, 0.7);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#131314]/80 backdrop-blur-xl border-b border-[#edfcff]/5 shadow-2xl shadow-black/50">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<a href="index.html" class="flex items-center gap-3 text-2xl font-bold tracking-tighter text-[#00FF41] font-['Space_Grotesk'] hover:text-white transition-colors group">
+    <div class="w-8 h-8 rounded-full overflow-hidden border border-[#00FF41]/20 group-hover:border-[#00FF41]/50 transition-colors">
+        <img src="profile.jpg" alt="P" class="w-full h-full object-cover">
+    </div>
+    Pravin Mohite.
+</a>
+<div class="hidden md:flex items-center gap-8 font-['Space_Grotesk'] tracking-tight">
+<a class="text-[#00FF41] font-bold border-b-2 border-[#00FF41] pb-1" href="#overview">Overview</a>
+<a class="text-[#edfcff]/60 hover:text-[#edfcff] transition-colors" href="#features">Capabilities</a>
+<a class="text-[#edfcff]/60 hover:text-[#edfcff] transition-colors" href="#security">Info</a>
+<a class="text-[#edfcff]/60 hover:text-[#edfcff] transition-colors" href="#documentation">Documentation</a>
+</div>
+<div class="flex items-center gap-4">
+<a href="https://witan.webapp-1c9.workers.dev/install" target="_blank" class="bg-[rgb(11,228,255)] text-black px-5 py-2 rounded-lg font-label font-bold text-sm tracking-tight hover:brightness-110 active:scale-95 transition-all inline-block">
+                    Install Witan
+                </a>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section id="overview" class="relative px-8 py-20 lg:py-32 max-w-7xl mx-auto overflow-hidden">
+<div class="relative z-10 flex flex-col items-center text-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/10 border border-secondary-container/20 mb-8">
+<span class="material-symbols-outlined text-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">lens</span>
+<span class="font-label text-[10px] uppercase tracking-[0.2em] text-secondary-container font-extrabold">System Online</span>
+</div>
+<h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tighter text-primary max-w-4xl mb-6">
+                    Witan — AI-powered Discord Mentor &amp; <span class="text-secondary-container">Security Sentinel</span>
+</h1>
+<p class="font-body text-on-surface-variant text-lg md:text-xl max-w-2xl mb-12 leading-relaxed">
+                    Elevate your digital perimeter with a sophisticated autonomous agent. Witan combines deep learning mentorship with real-time threat intelligence.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="https://witan.webapp-1c9.workers.dev/install" target="_blank" class="bg-[rgb(6,227,255)] text-black px-8 py-4 rounded-lg font-headline font-bold text-lg hover:shadow-[0_0_30px_rgba(6,227,255,0.3)] transition-all flex items-center gap-2 justify-center">
+<span class="material-symbols-outlined">add_moderator</span> Install Witan
+                    </a>
+<a href="https://github.com/0XoF3/Witan.git" target="_blank" class="border border-outline-variant text-primary px-8 py-4 rounded-lg font-headline font-bold text-lg hover:bg-surface-container-high transition-all flex items-center gap-2 justify-center">
+<span class="material-symbols-outlined">code</span> GitHub Repository
+                    </a>
+</div>
+</div>
+
+</section>
+<!-- Why Witan Bento Grid -->
+<section id="features" class="px-8 py-20 max-w-7xl mx-auto">
+<div class="flex flex-col mb-16">
+<span class="font-label text-xs uppercase tracking-widest text-secondary-container font-bold mb-2">Capabilities</span>
+<h2 class="font-headline text-4xl font-bold text-primary">Why Witan?</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- AI Mentorship -->
+<div class="md:col-span-8 p-8 rounded-xl bg-surface-container-low flex flex-col justify-between group hover:bg-surface-container transition-colors">
+<div>
+<span class="material-symbols-outlined text-secondary-container mb-6 text-4xl">psychology</span>
+<h3 class="font-headline text-2xl font-bold mb-4">AI Mentorship</h3>
+<p class="font-body text-on-surface-variant max-w-md leading-relaxed">
+                            Personalized roadmaps and certification preparation tailored to your learning pace. Witan tracks your progress and adapts challenges to your skill level.
+                        </p>
+</div>
+<div class="mt-12 flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded bg-surface-container-highest text-on-surface-variant font-label text-[10px] uppercase tracking-wider">CEH Prep</span>
+<span class="px-3 py-1 rounded bg-surface-container-highest text-on-surface-variant font-label text-[10px] uppercase tracking-wider">OSCP Guides</span>
+<span class="px-3 py-1 rounded bg-surface-container-highest text-on-surface-variant font-label text-[10px] uppercase tracking-wider">Skill Mapping</span>
+</div>
+</div>
+<!-- URL Scanning -->
+<div class="md:col-span-4 p-8 rounded-xl bg-surface-container-highest flex flex-col border border-outline-variant/10 group">
+<span class="material-symbols-outlined text-secondary-container mb-6 text-4xl">policy</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Real-time URL Scanning</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                        Automatic detection of phishing attempts and malicious links before your team can click them.
+                    </p>
+<div class="mt-auto pt-8 border-t border-outline-variant/20 flex items-center justify-between">
+<span class="font-label text-xs text-secondary-container">Live Monitoring</span>
+<span class="material-symbols-outlined text-secondary-container">check_circle</span>
+</div>
+</div>
+<!-- Daily News -->
+<div class="md:col-span-4 p-8 rounded-xl bg-surface-container-low flex flex-col border border-outline-variant/10">
+<span class="material-symbols-outlined text-secondary-container mb-6 text-4xl">rss_feed</span>
+<h3 class="font-headline text-2xl font-bold mb-4">News Digest</h3>
+<p class="font-body text-on-surface-variant leading-relaxed text-sm">
+                        Curated security intelligence and daily headlines delivered directly to your server's intel channel.
+                    </p>
+</div>
+<!-- Goal & Reminder -->
+<div class="md:col-span-8 p-8 rounded-xl bg-surface-container-low flex items-center gap-8 border border-outline-variant/10">
+<div class="flex-1">
+<span class="material-symbols-outlined text-secondary-container mb-6 text-4xl">notifications_active</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Goal &amp; Reminder System</h3>
+<p class="font-body text-on-surface-variant leading-relaxed">
+                            Set sophisticated technical goals and reminders. Never miss a critical update or a certification deadline again.
+                        </p>
+</div>
+<div class="hidden lg:block w-48 h-48 bg-surface-container-highest rounded-full border-4 border-secondary-container/20 flex items-center justify-center">
+<div class="text-center">
+<div class="font-headline text-4xl font-bold text-secondary-container">84%</div>
+<div class="font-label text-[10px] uppercase text-on-surface-variant">Goal Progress</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Intel Modules -->
+<section id="security" class="px-8 py-20 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col items-center text-center mb-16">
+<h2 class="font-headline text-4xl font-bold text-primary mb-4">Technical Intel</h2>
+<div class="h-1 w-20 bg-secondary-container"></div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+<!-- Intel Module 1 -->
+<div class="space-y-6">
+<div class="flex items-center gap-3">
+<span class="text-secondary-container font-headline font-bold text-xl">01</span>
+<h4 class="font-headline text-xl font-bold tracking-tight uppercase">AI Roadmaps</h4>
+</div>
+<div class="p-1 bg-surface-container-high rounded-xl overflow-hidden">
+<img class="w-full h-48 object-cover rounded-lg opacity-80 hover:opacity-100 transition-opacity" data-alt="Futuristic glowing circuit board visualization" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAP4qqzsuDfClPReqz0pS-8tR6bESRc-zfv3_rf2TCjdwtgrkbwfbRRNMm-yZAt7n15jqBNdQ5i9N3GnhhEUBVE_iwn_1hZF2CJqSS849FBv5nGc7PL7z84G20hGBXGruf4ZJJLnrc7aSBbW8AdEaK0jgPBPtIO62a4rWtiP4osorwX-Fj6e-4fM86Ze1CeWyqpaUhaysm5v1Gb8nABT9Rrv7M9ofOFtD1i48nMald9QfAYKkgyowa6Q1giHLK-_ywyofKBV7Ib0Ust"/>
+</div>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed">
+                            Dynamic visual mapping of cybersecurity career paths. Witan analyzes current market demands to update your training modules in real-time.
+                        </p>
+</div>
+<!-- Intel Module 2 -->
+<div class="space-y-6">
+<div class="flex items-center gap-3">
+<span class="text-secondary-container font-headline font-bold text-xl">02</span>
+<h4 class="font-headline text-xl font-bold tracking-tight uppercase">URL Threat Intel</h4>
+</div>
+<div class="p-6 bg-surface-container-high rounded-xl border-l-4 border-secondary-container">
+<div class="flex flex-col gap-4">
+<div class="flex justify-between items-center bg-surface-container px-3 py-2 rounded">
+<span class="font-label text-[10px] text-on-surface-variant">GOOGLE SAFE BROWSING</span>
+<span class="material-symbols-outlined text-secondary-container text-sm">verified</span>
+</div>
+<div class="flex justify-between items-center bg-surface-container px-3 py-2 rounded">
+<span class="font-label text-[10px] text-on-surface-variant">VIRUSTOTAL INTEGRATION</span>
+<span class="material-symbols-outlined text-secondary-container text-sm">verified</span>
+</div>
+<div class="flex justify-between items-center bg-surface-container px-3 py-2 rounded opacity-50">
+<span class="font-label text-[10px] text-on-surface-variant">HYBRID ANALYSIS</span>
+<span class="material-symbols-outlined text-on-surface-variant text-sm">lock_clock</span>
+</div>
+</div>
+</div>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed">
+                            Multi-engine correlation for identifying sophisticated obfuscated threats. Powered by world-class threat databases.
+                        </p>
+</div>
+<!-- Intel Module 3 -->
+<div class="space-y-6">
+<div class="flex items-center gap-3">
+<span class="text-secondary-container font-headline font-bold text-xl">03</span>
+<h4 class="font-headline text-xl font-bold tracking-tight uppercase">Security News Feed</h4>
+</div>
+<div class="p-6 bg-surface-container-high rounded-xl">
+<div class="space-y-4">
+<div class="border-b border-outline-variant/20 pb-2">
+<div class="text-[10px] font-label text-secondary-container mb-1">CVE-2024-XXXX</div>
+<div class="text-xs font-bold">Critical Zero-Day in Core Library</div>
+</div>
+<div class="border-b border-outline-variant/20 pb-2">
+<div class="text-[10px] font-label text-secondary-container mb-1">APT ALERT</div>
+<div class="text-xs font-bold">New Ransomware Group Targets FIN-SEC</div>
+</div>
+</div>
+</div>
+<p class="font-body text-on-surface-variant text-sm leading-relaxed">
+                            Automated aggregation from over 200 high-fidelity security news sources and CVE databases.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Slash Commands Grid -->
+<section class="px-8 py-20 max-w-7xl mx-auto">
+<div class="mb-12">
+<h2 class="font-headline text-3xl font-bold text-primary mb-2">Terminal Interface</h2>
+<p class="font-body text-on-surface-variant text-sm uppercase tracking-widest">Active Slash Commands</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="p-4 bg-surface-container rounded border-l-2 border-secondary-container/30 hover:border-secondary-container transition-all cursor-default">
+<div class="flex items-center justify-between mb-2">
+<span class="font-headline text-secondary-container font-bold">/scanurl</span>
+<span class="material-symbols-outlined text-on-surface-variant text-sm">terminal</span>
+</div>
+<p class="font-body text-xs text-on-surface-variant">Perform deep link analysis on a specific URL.</p>
+</div>
+<div class="p-4 bg-surface-container rounded border-l-2 border-secondary-container/30 hover:border-secondary-container transition-all cursor-default">
+<div class="flex items-center justify-between mb-2">
+<span class="font-headline text-secondary-container font-bold">/goal</span>
+<span class="material-symbols-outlined text-on-surface-variant text-sm">terminal</span>
+</div>
+<p class="font-body text-xs text-on-surface-variant">Initiate a new educational or technical goal.</p>
+</div>
+<div class="p-4 bg-surface-container rounded border-l-2 border-secondary-container/30 hover:border-secondary-container transition-all cursor-default">
+<div class="flex items-center justify-between mb-2">
+<span class="font-headline text-secondary-container font-bold">/resetgoal</span>
+<span class="material-symbols-outlined text-on-surface-variant text-sm">terminal</span>
+</div>
+<p class="font-body text-xs text-on-surface-variant">Clear existing goal data to restart roadmap.</p>
+</div>
+<div class="p-4 bg-surface-container rounded border-l-2 border-secondary-container/30 hover:border-secondary-container transition-all cursor-default">
+<div class="flex items-center justify-between mb-2">
+<span class="font-headline text-secondary-container font-bold">/setreminder</span>
+<span class="material-symbols-outlined text-on-surface-variant text-sm">terminal</span>
+</div>
+<p class="font-body text-xs text-on-surface-variant">Configure automated task alerts.</p>
+</div>
+<div class="p-4 bg-surface-container rounded border-l-2 border-secondary-container/30 hover:border-secondary-container transition-all cursor-default">
+<div class="flex items-center justify-between mb-2">
+<span class="font-headline text-secondary-container font-bold">/reminders</span>
+<span class="material-symbols-outlined text-on-surface-variant text-sm">terminal</span>
+</div>
+<p class="font-body text-xs text-on-surface-variant">List all active scheduled alerts.</p>
+</div>
+<div class="p-4 bg-surface-container rounded border-l-2 border-secondary-container/30 hover:border-secondary-container transition-all cursor-default">
+<div class="flex items-center justify-between mb-2">
+<span class="font-headline text-secondary-container font-bold">/onnews</span>
+<span class="material-symbols-outlined text-on-surface-variant text-sm">terminal</span>
+</div>
+<p class="font-body text-xs text-on-surface-variant">Enable daily threat intelligence digest.</p>
+</div>
+</div>
+</section>
+<!-- System Demonstration -->
+<section class="px-8 py-20 max-w-5xl mx-auto">
+<div class="bg-surface-container-high rounded-2xl overflow-hidden aspect-video relative group border border-outline-variant/10">
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center z-10">
+<a href="https://www.youtube.com/watch?v=08DNHA392eY" target="_blank" class="w-20 h-20 bg-[rgb(6,227,255)] text-black rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-[0_0_50px_rgba(6,227,255,0.4)]">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</a>
+</div>
+<img class="w-full h-full object-cover" data-alt="High tech dark server room with green neon lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATGucQLp9B2TMSsBTp2Acr0yhMRMs8qau5MKrp0EE6gpXJog5s8DIaj4trXpl171lTFcoSOPQ4GNYv7clt_aFXlVuJoAKxoSacYIyc79XEe0OpoQw_eN3NYZP2JApk8ttQpGasIhRNe2_6uX94KkENx-u9vde50mA4JfG-D9x9YPY4rqNSVLcmR-E_Y_ZeFjBqcLqKMg6KNYnTd80JQXQ2rjl7J4KeUQfPcU8un121gPiygFG-Oz_HE44oP_IVizBL6henZTai-kNO"/>
+<div class="absolute bottom-6 left-8 z-20">
+<p class="font-label text-xs uppercase tracking-widest text-secondary-container font-bold">System Demonstration</p>
+<h3 class="font-headline text-2xl font-bold">Deploying Witan in 60 Seconds</h3>
+</div>
+</div>
+</section>
+<!-- Deploy Sentinel Footer CTA -->
+<section id="documentation" class="px-8 py-24 bg-surface-container-low border-t border-outline-variant/10 text-center">
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-primary mb-8 tracking-tighter">Ready to Deploy the Sentinel?</h2>
+<p class="font-body text-on-surface-variant max-w-xl mx-auto mb-12">
+                Join 500+ security-focused communities currently utilizing Witan's autonomous monitoring.
+            </p>
+<a href="https://github.com/0XoF3/Witan.git" target="_blank" class="bg-[rgb(6,227,255)] text-black px-12 py-5 rounded-lg font-headline font-bold text-xl hover:brightness-110 transition-all flex items-center gap-3 mx-auto shadow-[0_20px_40px_rgba(0,0,0,0.4)] max-w-max">
+<span class="material-symbols-outlined">rocket_launch</span> Check Out Repo
+            </a>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#131314] w-full py-12 border-t border-[#edfcff]/5">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-4">
+<div class="text-[#edfcff] font-bold font-['Manrope'] text-xs uppercase tracking-widest">
+                Witan Protocol
+            </div>
+<div class="flex gap-8">
+<a class="text-[#edfcff]/40 hover:text-[#00FF41] transition-colors font-['Manrope'] text-xs uppercase tracking-widest" href="#">Status</a>
+<a class="text-[#edfcff]/40 hover:text-[#00FF41] transition-colors font-['Manrope'] text-xs uppercase tracking-widest" href="#">GitHub</a>
+<a class="text-[#edfcff]/40 hover:text-[#00FF41] transition-colors font-['Manrope'] text-xs uppercase tracking-widest" href="#">Privacy</a>
+<a class="text-[#edfcff]/40 hover:text-[#00FF41] transition-colors font-['Manrope'] text-xs uppercase tracking-widest" href="#">Terms</a>
+</div>
+<div class="text-[#00FF41] font-['Manrope'] text-xs uppercase tracking-widest">
+                © 2024 Witan Protocol. Systems Nominal.
+            </div>
+</div>
+</footer>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const navLinks = document.querySelectorAll("nav .hidden.md\\:flex a");
+        const sections = document.querySelectorAll("section[id]");
+        
+        window.addEventListener("scroll", () => {
+            let current = "";
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 250) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            if (scrollY < 100) {
+                current = "overview";
+            }
+
+            navLinks.forEach(link => {
+                link.className = "text-[#edfcff]/60 hover:text-[#edfcff] transition-colors"; // Reset all
+                if (current === "home" && link.getAttribute("href") === "index.html") {
+                    link.className = "text-[#00FF41] font-bold border-b-2 border-[#00FF41] pb-1 transition-colors";
+                } else if (link.getAttribute("href") === `#${current}`) {
+                    link.className = "text-[#00FF41] font-bold border-b-2 border-[#00FF41] pb-1 transition-colors";
+                }
+            });
+        });
+    });
+</script>
+</body></html>
